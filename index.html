@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> project</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            background: #eef7ff;
+            color: #333;
+        }
+        .navbar{
+            width: 100%;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            z-index: 1;
+            
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: 700;
+            color: #007bff;
+        }
+        .logo span{
+            color: #ff2b2b;
+        }
+        nav a{
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #333;
+        }
+        nav a:hover{
+            color: #007bff;
+        }
+        .hero{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 140px 60px 70px;
+        }
+        .hero-content{
+            width: 50%;
+        }
+        .hero-content h1{
+            font-size: 48px;
+            color: #0056c7;
+        }
+        .hero-content p{
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .btn{
+            display: inline-block;
+            padding: 12px 28px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            background: #0056c7;
+        }
+        .hero-img img{
+            width: 380px;
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float{
+            0%{ transform: translateY(10px); }
+            50%{ transform: translateY(-12px); }
+            100%{ transform: translateY(10px); }
+        }
+        .services{
+            padding: 60px;
+            text-align: center;
+        }
+        .services h2{
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #0056c7;
+        }
+        .service-box{
+            display: flex;
+            justify-content: space-around;
+        }
+        .card{
+            background: white;
+            width: 30%;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+        .card img{
+            width: 90px;
+            margin-bottom: 15px;
+        }
+        .card:hover{
+            transform: translateY(-10px);
+        }
+        .order-section{
+            padding: 60px;
+            text-align: center;
+        }
+        .order-section h2{
+            font-size: 34px;
+            margin-bottom: 20px;
+            color: #0056c7;
+        }
+        .order-form{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .order-form input{
+            margin: 10px 0;
+            padding: 12px;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            background: #ffffff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+        .order-form button{
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        footer{
+            padding: 20px;
+            text-align: center;
+            background: #007bff;
+            color: white;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Medicare<span>+</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Trusted Online Medicine Delivery</h1>
+            <p>Order certified medicines anytime, anywhere. Fast delivery & 24/7 support.</p>
+            <a href="#order" class="btn">Order Medicines</a>
+        </div>
+        <div class="hero-img">
+            <img src="https://imgs.search.brave.com/ypYteOobAOZXShFT6QG1t599t6uhueY3cwF1XARAgPs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dmVjdG9yc3RvY2su/Y29tL2kvNTAwcC8w/NS85OC9tZWRpY2Fs/LXN5bWJvbC1zZXQt/dmVjdG9yLTU4NjMw/NTk4LmpwZw" alt="">
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <div class="card">
+                <img src="https://www.shutterstock.com/image-vector/checklist-badge-line-icon-certificate-600nw-2463821279.jpg" alt="">
+                <h3>Certified Medicines</h3>
+                <p>100% genuine medicines from trusted pharmacies.</p>
+            </div>
+            <div class="card">
+                <img src="https://e7.pngegg.com/pngimages/16/125/png-clipart-computer-icons-customer-service-technical-support-24-7-service-24-hours-text-telephone-call.png" alt="">
+                <h3>24/7 Support</h3>
+                <p>Order anytime, our service is available round the clock.</p>
+            </div>
+            <div class="card">
+                <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-online-delivery-line-icon-png-image_9015748.png" alt="">
+                <h3>Fast & Free Delivery</h3>
+                <p>Get your medicines delivered within hours.</p>
+            </div>
+        </div>
+    </section>
+    <section id="order" class="order-section">
+        <h2>Order Your Medicine</h2>
+        <form class="order-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Medicine Name" required>
+            <input type="number" placeholder="Quantity" required>
+            <input type="text" placeholder="Address" required>
+            <input type="number" placeholder="Mobile number" required>
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+    </section>
+    <footer id="contact">
+        <p>Contact us: satish.gkp1976@gmail.com | +91-99350-90050</p>
+        <p>Gokuldham|Lucknow|Pwioi</p>
+    </footer>
+
+</body>
+</html>
